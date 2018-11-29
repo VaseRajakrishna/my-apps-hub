@@ -908,7 +908,7 @@ ul.tag-cloud li {
     transition: background .3s color .3s box-shadow .3s;
 }
 .team-member:hover{
-    box-shadow: 0px 0px 1px rgba(121, 121, 121, 0.67);
+    box-shadow: 0 0 14.25px 0.75px rgba(0,0,0,.2);
     border-radius: 4px;
 }
 .team-content {
@@ -1506,8 +1506,8 @@ img.author-box-image {
 }
 
 #content-wrapper section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 25px;
+  padding-bottom:25px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1519,7 +1519,7 @@ img.author-box-image {
 #footer-wrapper {
     z-index: 1;
     padding-top: 60px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #202020;
@@ -1714,16 +1714,17 @@ img.author-box-image {
 
 .post {
     background-color: #fff;
+    box-shadow: 0 0 14.25px 0.75px rgba(0,0,0,.2);
     overflow: hidden;
 }
 
 .post .content {
     padding: 15px;
     position: relative;
-    border-bottom: 4px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-.post .content:after {
+/* .post .content:after {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
@@ -1736,7 +1737,7 @@ img.author-box-image {
     border-bottom-color: #fff;
     border-width: 15px;
     margin-left: -15px;
-}
+} */
 
 .post .author {
     text-transform: uppercase;
@@ -2049,27 +2050,54 @@ img.author-box-image {
 /* ==========================================================================
    CONTACT
    ========================================================================== */
-
+.mah-home-cont-ctnr{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5em;
+    box-shadow: 0 0 14.25px 0.75px rgba(0,0,0,.2);
+}
 #contactform input#name,
 #contactform input#email,
-#contactform input#website,
+#contactform input#mobile,
 #contactform textarea#comments {
     width: 100%;
-    padding: 10px 5px;
+    padding: 8px 15px;
     margin-bottom: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     color: #202020;
+    outline: none;
     border: none;
+    border-radius: 20px;
+  
 }
 
+#contactform input#name:focus,
+#contactform input#email:focus,
+#contactform input#mobile:focus,
+#contactform textarea#comments:focus{
+    box-shadow: 0 0px 0px 2px rgb(1, 188, 212);
+}
 #contactform textarea#comments {
     min-height: 150px;
+    resize: none;
 }
 
-#contact h3 {
+/* #contact h3 {
     text-transform: uppercase;
+} */
+.mah-home-sbmt-btn{
+    width: 100%;
+    max-width: 200px;
+    background: #00bcd4 !important;
+    color: #ffffff !important;
+    border-color: #00bcd4;
 }
-
+.mah-home-sbmt-btn:hover{
+    background: #00cde5 !important;
+    color: #ffffff !important;
+    border-color: #00cde5;
+    
+}
 #mapwrapper {
     width: 100%;
     height: 400px;
@@ -2175,10 +2203,11 @@ img.author-box-image {
 
 .post .post-title {
     font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 2px;
+    /* font-size: 14px;
+    letter-spacing: 2px; */
     display: block;
-    text-transform: uppercase;  
+    color: #00bcd4;
+    /* text-transform: uppercase;   */
 }
 
 .overlay .btn-outlined.btn-primary {
@@ -2209,7 +2238,9 @@ img.author-box-image {
     color: #00bcd4;
     letter-spacing: 1.5px;
 }
-
+.text-white{
+    color: #ffffff;
+}
 /* .section-heading p {
   text-transform: uppercase;
 } */
