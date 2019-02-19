@@ -218,6 +218,7 @@ jQuery(document).ready(function($){
 /*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function($){
 'use strict';
+debugger;
   $(window).load(function(){
     $('#preloader').fadeOut('slow',function(){$(this).remove();});
   });
