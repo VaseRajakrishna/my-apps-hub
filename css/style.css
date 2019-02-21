@@ -38,7 +38,7 @@ body {
     /* color: #222; */
     color: #20201F;
     background: #f5f5f5;
-    font-family: Yantramanav, sans-serif;
+    /* font-family: Yantramanav, sans-serif; */
     font-weight: 400;
     line-height: 1.6;
     font-size: 14px;
@@ -50,7 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Ubuntu, sans-serif;
+   
+    font-family: 'Quicksand', sans-serif;
     /* font-weight: 700; */
 }
 
@@ -696,6 +697,9 @@ ul.tag-cloud li {
     -o-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    background: #ffffff;
+    padding: 10px 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -704,12 +708,17 @@ ul.tag-cloud li {
     line-height: 50px;
     color: #fff;
 }
-
-.navbar-inverse .navbar-nav {
+.navbar-fixed-top .navbar-brand {
+    color: #00bcd4 !important;
+}
+/* .navbar-inverse .navbar-nav {
     margin-top: 15px;
     margin-bottom: 15px;
+} */
+.navbar-fixed-top.navbar-nav {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
-
 .navbar-inverse .navbar-nav > li > a {
     position: relative;
     display: inline-block;
@@ -718,9 +727,9 @@ ul.tag-cloud li {
     text-transform: uppercase;
     letter-spacing: 0;
     font-size: 15px;
-    padding: 10px;
+    padding: 15px 15px 10px;
     color: #f5f5f5;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-shadow: none;
     -webkit-transition: color .3s;
     -moz-transition: color .3s;
@@ -748,7 +757,12 @@ ul.tag-cloud li {
     -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-
+.navbar-fixed-top .navbar-nav > li > a::before,
+.navbar-fixed-top .navbar-nav > li > a::after {
+   
+    background: #00bcd4;
+   
+}
 .navbar-inverse .navbar-nav > li > a:hover::before,
 .navbar-inverse .navbar-nav > li > a:focus::before,
 .navbar-inverse .navbar-nav > li > a:hover::after,
@@ -1035,7 +1049,7 @@ ul.tag-cloud li {
     background-color: #00bcd4;
     text-align: center;
     display: block;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+    /* box-shadow: 0 0 0 4px rgba(255, 255, 255, 1); */
     overflow: hidden;
     -webkit-transition: background .3s color .3s box-shadow .3s;
     -moz-transition: background .3s color .3s box-shadow .3s;
@@ -1043,7 +1057,7 @@ ul.tag-cloud li {
 }
 
 .service-block:hover .fa-md {
-    background: transparent;
+    background: #f9f9f9;
     color: #00bcd4;
     box-shadow: 0 0 0 2px #00bcd4;
 }
@@ -1504,7 +1518,9 @@ img.author-box-image {
     background: #f8f8f8;
     padding: 20px 0;
 }
-
+.bg-gray{
+    background-color: #eaeaea !important;
+}
 #content-wrapper section {
   padding-top: 25px;
   padding-bottom:25px;
@@ -2146,9 +2162,10 @@ img.author-box-image {
 .section-inner.gap {
   margin-bottom: 0 !important;
 }
-
-.navbar-header h1 {
+.opaqued .navbar-header h1{
     color: #fff;
+}
+.navbar-header h1 {
     font-size: 24px;
     /* text-transform: uppercase; */
     letter-spacing: 2px;
@@ -2159,8 +2176,15 @@ img.author-box-image {
   margin-top: 0px;
     margin-bottom: 0px;
 }
-
-.navbar-inverse .navbar-nav > li > a {
+/* .navbar-fixed-top .navbar-nav {
+    margin-top: 10px;
+      margin-bottom: 10px;
+  } */
+  .navbar-fixed-top .navbar-nav > li > a {
+    color: #181818;
+    
+}
+  .opaqued .navbar-nav > li > a {
     letter-spacing: 1px;
     font-size: 15px;
     padding: 15px 15px 10px;
@@ -2236,7 +2260,7 @@ img.author-box-image {
 .main-title {
     /* text-transform: uppercase; */
     color: #00bcd4;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.5px; */
 }
 .text-white{
     color: #ffffff;

@@ -2971,17 +2971,17 @@
 		navContainer: false,
 		navContainerClass: 'owl-nav',
 		navClass: [
-			'owl-prev',
-			'owl-next'
+			'owl-prev owl-btn',
+			'owl-next owl-btn'
 		],
 		slideBy: 1,
-		dotClass: 'owl-dot',
-		dotsClass: 'owl-dots',
-		dots: true,
-		dotsEach: false,
-		dotsData: false,
-		dotsSpeed: false,
-		dotsContainer: false
+		// dotClass: 'owl-dot',
+		// dotsClass: 'owl-dots',
+		// dots: true,
+		// dotsEach: false,
+		// dotsData: false,
+		// dotsSpeed: false,
+		// dotsContainer: false
 	};
 
 	/**

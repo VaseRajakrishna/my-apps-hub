@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu|Yantramanav" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
@@ -22,10 +22,34 @@
     <link rel="stylesheet" href="css/owl-default.min.css">
     <link href="css/style.css" rel="stylesheet">
     <style>
-        #demos .owl-carousel .item {
-            min-height: 10rem;
+
+    .services-style2-grids .grid {
+    background: -webkit-linear-gradient(left, #193775, #00abc9);
+    background: -moz-linear-gradient(left, #193775, #00abc9);
+    background: -o-linear-gradient(left, #193775, #00abc9);
+    background: -ms-linear-gradient(left, #193775, #00abc9);
+    background: linear-gradient(left, #193775, #00abc9);
+    padding: 35px 45px;
+    position: relative;
+}
+.services-style2-grids .grid:before {
+    content: "";
+    background-color: #fff;
+    width: 99%;
+    height: 98.2%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.services-style2-grids .grid > div {
+    position: relative;
+}
+#demos .owl-carousel .item {
+    min-height: 10rem;
+    background: #ffffff;
     padding: 1rem;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .owl-carousel .owl-item img {
     display: block;
@@ -37,7 +61,33 @@
    
     padding-top: 10px;
     padding-bottom: 10px;
-}</style>
+}
+.owl-btn{
+    padding: 0px !important;
+    height: 40px;
+    width: 40px;
+    margin-left: 0.5em !important;
+    background: #00bcd4 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 0px !important;
+    font-size: 25px !important;
+    outline: none !important;
+}
+    .owl-btn:hover{
+        background: #0ba5b9 !important;
+    }
+    .owl-theme .owl-nav {
+    margin-top: 30px;
+    
+}
+.services-style2-grids .grid h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin: 0.27em 0 0.7em;
+    color: #06223e;
+}
+    </style>
     <!-- scripts Jqyery -->
     <script src="js/jquery.js"></script>
 
@@ -47,9 +97,9 @@
         jQuery(document).ready(function ($) {
             'use strict';
             jQuery('body').backstretch([
-                "images/bg/bg1.jpg",
-                "images/bg/bg2.jpg",
-                "images/bg/bg3.jpg"
+                "images/bg/bg01.jpg",
+                "images/bg/bg02.jpg",
+                "images/bg/bg03.jpg"
             ], {
                 duration: 5000,
                 fade: 500,
@@ -252,6 +302,9 @@
                 </div>
                 <!--/.row-->
             </div>
+        </section>
+        <section id="services" class="bg-gray">
+         
             <div class="gap"></div>
             <div class="container">
                 <div class="row">
@@ -264,6 +317,7 @@
                     </div>
                 </div>
             </div>
+        
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -335,9 +389,17 @@
                 <div class="gap"></div>
             </div>
         </section>
-        <section id="demos" class="white">
+        <section  id="demos" class="white">
             <div class="container">
                 <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Our Process</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="large-12 columns">
                         <div class="owl-carousel owl-theme">
@@ -351,7 +413,10 @@
                                 <img src="images/icons/php.png" alt="PHP">
                             </div>
                             <div class="item">
-                                <img src="images/icons/python.png" alt="python">
+                                <img src="images/icons/cloud-computing.png" alt="cloud-computing">
+                            </div>
+                            <div class="item">
+                                <img src="images/icons/big-data.png" alt="big-data">
                             </div>
                             <div class="item">
                                 <img src="images/icons/scala.png" alt="SCALa">
@@ -374,11 +439,177 @@
                         </div>
                     </div>
                 </div>
+                <!--/.row-->
+            
+                <!--/.row-->
             </div>
-
         </section>
-
-
+        <section id="blog" class="bg-gray">
+            <div class="container">
+                <div class="center gap fade-down section-heading">
+                    <div class="gap"></div>
+                    <h2 class="main-title">Products</h2>
+                    <hr>
+                    <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-1.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Gems Slider</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-2.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Diamonds Crush</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-3.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Ice Skating Rover</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-7.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Skating Underwater</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-5.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Ghost Warrior Ride</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/Products-6.jpg" class="img-responsive" />
+                                <!-- <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+                                </div> -->
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Slingshot King</h2>
+                                <!-- <div class="author">
+                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+                                </div> -->
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="single-quote" class="divider-section">
             <div class="container">
                 <div class="gap"></div>
@@ -549,7 +780,7 @@
             </div>
         </section>
 
-        <section id="stats" class="divider-section">
+        <!-- <section id="stats" class="divider-section bg-gray">
             <div class="gap"></div>
             <div class="container">
                 <div class="row">
@@ -584,174 +815,11 @@
                 </div>
             </div>
             <div class="gap"></div>
-        </section>
+        </section> -->
 
-        <section id="blog" class="white">
-            <div class="container">
-                <div class="center gap fade-down section-heading">
-                    <div class="gap"></div>
-                    <h2 class="main-title">Products</h2>
-                    <hr>
-                    <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                </div>
-                <div class="gap"></div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-1.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Gems Slider</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-2.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Diamonds Crush</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-3.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Ice Skating Rover</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gap"></div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-7.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Skating Underwater</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-5.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Ghost Warrior Ride</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="post">
-                            <div class="post-img-content">
-                                <img src="images/portfolio/Products-6.jpg" class="img-responsive" />
-                                <!-- <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
-                                </div> -->
-                            </div>
-                            <div class="content">
-                                <h2 class="post-title">Slingshot King</h2>
-                                <!-- <div class="author">
-                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
-                                </div> -->
-                                <div>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
-                                </div>
-                                <div class="read-more-wrapper">
-                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="services-style2 section-padding bg-gray" id="services">
+              
+            </section>
 
 
         <section id="contact">
